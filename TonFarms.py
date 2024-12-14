@@ -204,7 +204,7 @@ class TonFarms:
     def join_clan(self, token):
         url = 'https://api.tonfarms.com/api/v1/clan/join'
         headers = {**self.headers, 'authorization': f"Bearer {token}"}
-        payload = {"clan_id": "dSq68C"}
+        payload = {"clan_id": "yGUTZB"}
         res = self.make_request('POST', url, headers=headers, json_data=payload)
         if res:
             data = res.json()
